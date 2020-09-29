@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway";
+    background-color: beige;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    display: block;
+    background-color: #db7290;
+}
+.inner_header{
+    width: 1000px;
+    height: 100%;
+    display:block;
+    margin: 0 auto;
+    
+}
+.logo_container{
+    height: 100%;
+    display:table;
+    float: left;
+}
+.logo_container h1{
+    color: white;
+    height:100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 32px;
+    font-weight: 200;
+}
+.logo_container h1 span{
+    font-weight: 800;
+}
+.navbar{
+    float: right;
+    height: 100%;
+}
+.navbar a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+    text-decoration: none;
+    margin-top: -17px;
+}
+.navbar a:last-child{
+    padding-right: 0;
+}
+.navbar a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-size: 16px;
+}
+.card {
+    width: 400px;
+    margin: 75px auto 0;
+    background-color: #fff;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, .14);
+    color: #444;
+    text-align: center;
+    font-size: 16px;
+}
+
+.card .card-header {
+    position: relative;
+    height: 48px;
+}
+
+.card .card-header .profile-img {
+    width: 96px;
+    height: 96px;
+    border-radius: 1000px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+}
+
+.card .card-body {
+    padding: 10px 40px;
+}
+
+.card .card-body .full-name {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 10px 0 0;
+}
+
+.card .card-body .username {
+    font-size: 13px;
+    color: #777;
+    margin: 5px 0 0;
+}
+
+.card .card-body .city {
+    font-weight: 500;
+    margin: 10px 0 0;
+}
+
+.card .card-body .desc {
+    line-height: 24px;
+}
+
+.card .social-icon {
+    font-size: 18px;
+    margin: 0 7px;
+}
+
+.card .social-icon.facebook {
+    color: #3b5999;
+}
+
+.card .social-icon.twitter {
+    color: #55acee;
+}
+
+.card .social-icon.tumblr {
+    color: #34465d;
+}
+
+.card .social-icon.youtube {
+    color: #cd201f;
+}
+
+.card .social-icon.linkedin {
+    color: #0077b5;
+}
+
+.card .social-icon.google-plus {
+    color: #dd4b39;
+}
+
+.card .card-footer {
+    display: table;
+    width: 100%;
+    border-top: 1px solid #e6e6e6;
+}
+
+.card .card-footer .col {
+    display: table-cell;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.card .card-footer .count {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.vr {
+    border-right: 1px solid #e6e6e6;
+}
+
+@media screen and (max-width: 575px) {
+    .card {
+        width: 96%;
+    }
+
+    .card .card-body {
+        padding: 10px 20px;
+    }
+
+    .card .card-footer .col {
+        padding: 0 10px;
+    }
+
+    .card .card-footer .count {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+footer{
+    background:#db7290;
+	padding: 40px 0;
+	margin-top: 50px;
+
+}
+.footer-container{
+    min-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+.logo-container{
+    margin-left: -10%;
+}
+.logo{
+    width: 250px;
+    height: 100%;
+}
+
+.social-media{
+    margin: 20px 0;
+}
+
+.social-media a{
+    color:beige;
+    margin-right: 25px;
+    font-size: 30px;
+    text-decoration: none;
+    transition: .3s linear;
+    font-weight: bold;
+}
+.social-media a :hover{
+    color :whitesmoke;
+}
+.rights-text{
+    font-size: 13px;
+    color: whitesmoke;
+    
+}
+.right-col h1{
+	font-size: 26px;
+    color: whitesmoke;
+}
+.right-col{
+	margin-right:80px;
+}
+
+.border{
+    width : 100px;
+    height: 4px;
+    background:lightpink;
+
+}
+.left-col{
+    margin-left: 100px;
+}
+.newsletter-form{
+	display: flex;
+	margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.enter{
+	color: whitesmoke;
+	margin-top: 20px;
+}
+.txtb{
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: whitesmoke;
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+}
+
+.btn{
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #db7290;
+    background: rgb(250, 219, 219);
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px ;
+    cursor: pointer;
+    transition: opacity .3s linear;
+}
+.btn :hover{
+    opacity: .7;
+}
+ @media screen and (max-width:960px){
+     .footer-container{
+         max-width: 600px;
+     }
+     .right-col{
+         width: 100%;
+         margin-bottom: 60px;
+     }
+     .left-col{
+         width: 100%;
+         text-align: center;
+     }
+ }
+
+ @media screen and ( max-width : 700px){
+     .btn{
+         margin: 0;
+         width: 100%;
+         margin-top: 20px;
+     }
+ }
